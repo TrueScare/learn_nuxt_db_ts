@@ -3,7 +3,7 @@ import * as schema from '../db/schema'
 
 const db = drizzle(process.env.DATABASE_URL!, { schema })
 
-export function useDrizzle(){
+export function useDrizzle() {
   return db
 }
 
