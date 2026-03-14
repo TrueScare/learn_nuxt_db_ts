@@ -14,6 +14,6 @@ useHead({
 
 <template>
   <UContainer>
-    <LogCompositor/>
+    <LogCompositor />
   </UContainer>
 </template>

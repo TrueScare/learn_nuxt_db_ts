@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import type { UnwrapRef } from 'vue'
-
-const logs: Ref<UnwrapRef<string>, UnwrapRef<string> | string> = ref('')
+const logs = ref<LogEntry[]>([])
 
 updateListing()
 
