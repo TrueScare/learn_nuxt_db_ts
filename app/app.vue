@@ -10,22 +10,10 @@ useHead({
     lang: 'en'
   }
 })
-
-const { data: logs } = useFetch('/api/getAllLogEntries')
 </script>
 
 <template>
   <UContainer>
-    <div
-      v-for="log in logs"
-      :key="log.id"
-    >
-      <div class="font-bold">
-        {{ log.title }}
-      </div>
-      <div>
-        {{ log.body }}
-      </div>
-    </div>
+    <LogCompositor/>
   </UContainer>
 </template>
